@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2020;
+}
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.menu {
+    color: #A0A0A0;
+    padding: 8px;
+    margin-right: 16px;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+
+
+.header__search{
+    width: 650px;
+    height: 32px;
+}
+
+.search-input {
+    width: 575px;
+    height: 32px;
+    padding: 1px 5px;
+
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #1C62B9;
+}
+
+.search-btn {
+    width: 65px;
+    height: 32px;
+    margin-left: -4px;
+}
+
+.header__navigation__list {
+    display: flex;
+    width: 250px;
+    height: 56px;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    color: #A0A0A0;
+    
+}
+
+.navigation__item {
+    width: 50px;
+    cursor: pointer;
+}
+
+
+
+/* main */
+
+.main {
+    display: flex;
+}
+
+.main__sidebar__left {
+    width: 240px;
+    height: auto;
+    background: #F5F5F5;
+}
+
+.main-wrapper {
+    width: calc(100% - 240px);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+}
+
+.main__content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 130px;
+    padding-top: 25px;
+
+}
+
+.main__content__item {
+    width: 210px;
+    height: 205px;
+    background: #FFF;
+    margin-bottom: 4px;
+}
+.content__item_thumbnail {
+  width: 100%;
+  height: 118px;
+  cursor: pointer;
+}
+
+.content__item__title {
+    width: 100%;
+    height: 32px;
+    font-size: 15px;
+    font-weight: 600;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.content__item__author {
+    display: block;
+    font-size: 13px;
+    color: #A0A0A0;
+    font-weight: 100;
+}
+.content__item__author:hover {
+  color: #000;
+}
+.content__item__description {
+  font-size: 13px;
+  color: #A0A0A0;
+}
+
+
+
+/* sidebar */
+
+.main {
+    background: #FAFAFA;
+}
+
+.main__sidebar__left-wrapper {
+  position: fixed;
+  width: 240px;
+  height: calc(100% - 56px);
+  padding-top: 12px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 56px;
+
+
+}
+
+.main__sidebar__left-wrapper:hover.main__sidebar__left-wrapper::-webkit-scrollbar{
+  display: inline-block;
+}
+
+.main__sidebar__left-wrapper::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
+
+.main__sidebar__left-wrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.main__sidebar__left-wrapper::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
+}
+
+
+.sidebar__left__navigation__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 24px;
+  cursor: pointer;
+}
+
+.sidebar__left__navigation__item:hover{
+  background: #EBEBEB;
+}
+
+.sidebar__left__navigation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 12px;
+
+}
+
+.navigation__logo{
+  width: 24px;
+  height: 24px;
+  font-size: 17px;
+  padding: 0 2px;
+  margin-right: 24px;
+  color: #888888;
+  border-radius: 50%;
+}
+
+
+.sidebar__left__navigation__link {
+  font-size: 15px;
+}
+
+.active-item {
+  background: #DCDCDC;
+}
+
+.active-item:hover {
+  background: #D3D3D3;
+}
+
+.active-item .navigation__logo {
+  color: #FF0000;
+}
+
+
+.sidebar__left__navigation__title {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #6D6D6D;
+  padding: 8px 24px;
+}
+
+
+
+
+
+
+
+.color-controls{
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 100px;
+    right: 0;
+    top: 56px;
+    background: #FFF;
+    border: 1px solid ghostwhite;
+    padding: 10px 5px;
+}
+
+.color-controls .btn {
+    border: none;
+    background: rgb(141, 109, 109);
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    float: right;
+    margin-top: 10px;
+}
+
+
+
+
+.vissible {
+    display: block;
+}
